@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
-
-import SignUpPage from '../signUp/signUpPage';
+import { Link } from 'react-router-dom';
 
 import './signInStyle.css';
 
@@ -16,7 +14,7 @@ class signInPage extends Component {
                 <div className='box'>
 
                     <div className="left">
-                        <img src="https://picsum.photos/300/300?random" alt="Image"/>
+                        <img src="https://picsum.photos/300/300?random" alt="Logo"/>
                     </div>
 
                     <div className="right">
@@ -36,12 +34,8 @@ class signInPage extends Component {
                     </form>
                     {/* TODO> Redirect to Sign Up page */}
 
-                    <Router>
-                        <React.Fragment>
-                            <Link className='Haveacc' to="/signUp">Have an account?</Link>
-                            <Route path='/SignUp' exact component={SignUpPage}/>
-                        </React.Fragment>
-                    </Router>
+                    
+                    <Link className='Haveacc' to="/signUp">Have an account?</Link>
                     
                 </div>
 

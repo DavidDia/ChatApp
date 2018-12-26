@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-
-import SignInPage from '../signIn/signInPage';
-import SignUpPage from '../signUp/signUpPage';
+import {Link, Route } from 'react-router-dom';
 
 class home extends Component {
     render() { 
         return (
             <div>
                 <h1>Home</h1>
+
+                <Link to='/signIn'>Sign In</Link>
+                <br/>
+                <Link to='/signUp'>Sign Up</Link>
             </div>
         );
     }

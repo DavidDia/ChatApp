@@ -13,7 +13,7 @@ class loginPage extends Component {
                 <div className='box'>
 
                     <div className="left">
-                        <img src="https://picsum.photos/300/300?random" alt="Image"/>
+                        <img src="https://picsum.photos/300/300?random" alt="Logo"/>
                     </div>
 
                     <div className="right">
